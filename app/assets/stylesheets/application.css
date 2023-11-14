@@ -13,3 +13,65 @@
  *= require_tree .
  *= require_self
  */
+
+ /* app/assets/stylesheets/application.css */
+
+/* Importe une police Google Font pour une apparence moderne */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Applique la police aux éléments du corps de la page */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f8f9fa; /* Couleur de fond légère */
+  color: #495057; /* Couleur de texte principale */
+}
+
+/* Style pour les liens */
+a {
+  color: #007bff; /* Couleur des liens */
+  text-decoration: none;
+  transition: color 0.3s ease; /* Animation de transition de couleur au survol */
+}
+
+a:hover {
+  color: #0056b3; /* Nouvelle couleur au survol */
+}
+
+/* Style pour les boutons */
+button {
+  padding: 10px 15px;
+  background-color: #28a745; /* Couleur de fond du bouton */
+  color: #fff; /* Couleur du texte du bouton */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Animation de transition de couleur au survol */
+}
+
+button:hover {
+  background-color: #218838; /* Nouvelle couleur au survol */
+}
+
+/* Style pour les cases à cocher */
+.task-checkbox {
+  cursor: pointer;
+}
+
+/* Ajoute une ombre douce aux éléments de la page */
+.box-shadow {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Ajoute une animation de fondu en entrée pour les éléments */
+.fade-in {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

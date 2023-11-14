@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @task.title %>
+</p>
+
+<p>
+  <strong>Details:</strong>
+  <%= @task.details %>
+</p>
+
+<p>
+  <strong>Completed:</strong>
+  <%= @task.completed ? 'Completed' : 'Not Completed' %>
+</p>
+
+<%= link_to 'Back', tasks_path %>
+<%= link_to 'Edit', edit_task_path(@task) %>
+<%= link_to 'Delete', task_path(@task), method: :delete, data: { turbo_method: :delete, turbo_confirm: 'Are you sure?' } %>

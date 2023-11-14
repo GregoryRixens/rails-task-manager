@@ -1,0 +1,8 @@
+<tr>
+  <td><%= task.title %></td>
+  <td><%= task.details %></td>
+  <td><%= task.completed ? 'Completed' : 'Not Completed' %></td>
+  <td><%= link_to 'Show', task_path(task) %></td>
+  <td><%= link_to 'Edit', edit_task_path(task) %></td>
+  <td><%= link_to 'Delete', task_path(task), method: :delete, data: { turbo_method: :delete, turbo_confirm: 'Are you sure?' } %></td>
+</tr>
